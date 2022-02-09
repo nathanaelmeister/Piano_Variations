@@ -5,19 +5,26 @@
 }
 
 \header {
-  title = ""
-  subtitle = ""
-  subsubtilte = ""
+  title = "Merrily we roll along"
+  subtitle = "Thema"
+  subsubtilte = \markup \null
   tagline = ##f
-  composer = ""
+  composer = "amerikanisches Volkslied"
 }
 
-upper = \relative c'' {
+upper = \relative c' {
   \clef treble
   \key c \major
   \time 4/4
 
-  %right hand notes
+  e4 d c d
+  e e e2
+  d4 d d2
+  e4 g g2 \break
+  e4 d c d
+  e4 e e2
+  d4 d e d
+  c1 \bar "|."
 }
 
 lower = \relative c {
@@ -25,7 +32,14 @@ lower = \relative c {
   \key c \major
   \time 4/4
 
-  %left hand notes
+  c1
+  c
+  g'
+  c,
+  c
+  c
+  g' 
+  e \bar "|."
 }
 
 \score {

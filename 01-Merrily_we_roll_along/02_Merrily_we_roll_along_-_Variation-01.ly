@@ -1,8 +1,12 @@
 \version "2.22.1"
 
+\paper {
+  ragged-lasst = ##f
+}
+
 \header {
   title = "Merrily we roll along"
-  subtitle = "Thema"
+  subtitle = "Variation 1"
   subsubtilte = \markup \null
   tagline = ##f
   composer = "amerikanisches Volkslied"
@@ -13,14 +17,8 @@ upper = \relative c' {
   \key c \major
   \time 4/4
 
-  e4 d c d
-  e e e2
-  d4 d d2
-  e4 g g2
-  e4 d c d
-  e4 e e2
-  d4 d e d
-  c1 \bar "|." 
+  s1*8 \bar "|."
+
 }
 
 lower = \relative c {
@@ -31,11 +29,12 @@ lower = \relative c {
   c1
   c
   g'
-  c,
+  c, \break
   c
   c
-  g' 
+  g'
   e \bar "|."
+
 }
 
 \score {

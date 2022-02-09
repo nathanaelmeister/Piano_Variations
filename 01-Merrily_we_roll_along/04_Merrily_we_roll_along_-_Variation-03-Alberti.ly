@@ -5,19 +5,20 @@
 }
 
 \header {
-  title = ""
-  subtitle = ""
-  subsubtilte = ""
+  title = "Merrily we roll along"
+  subtitle = "Variation 1"
+  subsubtilte = "simple Alberti-Bass"
   tagline = ##f
-  composer = ""
+  composer = "amerikanisches Volkslied"
 }
 
-upper = \relative c'' {
+upper = \relative c' {
   \clef treble
   \key c \major
   \time 4/4
 
-  %right hand notes
+  s1*8 \bar "|."
+
 }
 
 lower = \relative c {
@@ -25,7 +26,16 @@ lower = \relative c {
   \key c \major
   \time 4/4
 
-  %left hand notes
+  c4 g' e g | %01
+  c, g' e g | %02
+  b, g' d g | %03
+  c, g' e g | %04
+  \break
+  c, g' e g | %05
+  c, g' e g | %06
+  b, g' d g | %07
+  c,1 \bar "|."
+
 }
 
 \score {
