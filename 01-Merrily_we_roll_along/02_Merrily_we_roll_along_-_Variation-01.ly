@@ -1,7 +1,7 @@
 \version "2.22.1"
 
 \paper {
-  ragged-lasst = ##f
+  ragged-last = ##f
 }
 
 \header {
